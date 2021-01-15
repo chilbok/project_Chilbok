@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Master</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="header">
@@ -14,5 +16,18 @@
     <div class="word-display">
         hello
     </div>
+    <div class="word-input-box">
+        <input type="text" class="word-input"/>
+    </div>
+    <div class="game-info">
+        <div>
+            time : <span class = "time">0</span> sec
+        </div>
+        <div>
+            score : <span class="score">0</span> pt
+        </div>
+    </div>
+    <button class="button loading" onclick="run()">loading...</button>
+    <script src="js/main.js"></script>
 </body>
 </html>
