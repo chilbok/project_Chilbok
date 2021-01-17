@@ -20,86 +20,92 @@
                 <th class="p1">player1</th>
                 <th class="p2">player2</th>
                 <tr>
-                    <td>Aces</td>
+                    <td><button class="categoryBtn">Aces</button></td>
                     <td class="p1 aces point" align="center"></td>
                     <td class="p2 aces point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>Deuces</td>
+                    <td><button class="categoryBtn">Deuces</button></td>
                     <td class="p1 deuces point" align="center"></td>
                     <td class="p2 deuces point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>Threes</td>
+                    <td><button class="categoryBtn">Threes</button></td>
                     <td class="p1 threes point" align="center"></td>
                     <td class="p2 threes point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>Fours</td>
+                    <td><button class="categoryBtn">Fours</button></td>
                     <td class="p1 fours point" align="center"></td>
                     <td class="p2 fours point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>Fives</td>
+                    <td><button class="categoryBtn">Fives</button></td>
                     <td class="p1 fives point" align="center"></td>
                     <td class="p2 fives point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>Sixes</td>
+                    <td><button class="categoryBtn">Sixes</button></td>
                     <td class="p1 sixes point" align="center"></td>
                     <td class="p2 sixes point" align="center"></td>
                 </tr>
-                <tr class="black">
+                <tr class="highlight">
                     <td>Subtotal</td>
                     <td class="p1 subtotal point" align="center"></td>
                     <td class="p2 subtotal point" align="center"></td>
                 </tr>
-                <tr class="black bonus">
+                <tr class="highlight bonus">
                     <td>+35 Bonus</td>
-                    <td class="p1 bonus point" align="center"></td>
-                    <td class="p2 bonus point" align="center"></td>
+                    <td class="p1 point" align="center"><span class="p1 bonus">0</span>/35</td>
+                    <td class="p2 point" align="center"><span class="p2 bonus">0</span>/35</td>
                 </tr>
                 <tr>
                     <td colspan="3" align="center">Bounus if 1~6 are over 63 points</td>
                 </tr>
                 <tr>
-                    <td>Choice</td>
+                    <td><button class="categoryBtn">Choice</button></td>
                     <td class="p1 choice point" align="center"></td>
                     <td class="p2 choice point" align="center"></td>
                 </tr>
                 <tr class = "emptyRow"></tr>
                 <tr>
-                    <td>4 of a Kind</td>
+                    <td><button class="categoryBtn">4 of a Kind</button></td>
                     <td class="p1 4ofakind point" align="center"></td>
                     <td class="p2 4ofakind point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>Full House</td>
+                    <td><button class="categoryBtn">Full House</button></td>
                     <td class="p1 fullhouse point" align="center"></td>
                     <td class="p2 fullhouse point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>S. Straight</td>
-                    <td class="p2 sstraight point" align="center"></td>
+                    <td><button class="categoryBtn">S. Straight</button></td>
                     <td class="p1 sstraight point" align="center"></td>
+                    <td class="p2 sstraight point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>L. Straight</td>
+                    <td><button class="categoryBtn">L. Straight</button></td>
                     <td class="p1 lstraight point" align="center"></td>
                     <td class="p2 lstraight point" align="center"></td>
                 </tr>
                 <tr>
-                    <td>Yacht</td>
+                    <td><button class="categoryBtn">Yacht</button></td>
                     <td class="p1 yacht point" align="center"></td>
                     <td class="p2 yacht point" align="center"></td>
                 </tr>
                 <tr class = "emptyRow"></tr>
-                <tr class="black total">
+                <tr class="highlight total">
                     <td>TOTAL</td>
                     <td class="p1 total point" align="center"></td>
                     <td class="p2 total point" align="center"></td>
                 </tr>
             </table>
+            <div>
+                current turn: <span class="curTurn">player1</span>
+            </div>
+            <div>
+                roll chance: <span class="rollChance">0</span> times
+            </div>
         </div>
         <div class="playboard">
                 <table border="3" class="diceboard">

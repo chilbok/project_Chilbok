@@ -40,9 +40,11 @@ tr{
     height:2rem;
 }
 
-.black{
+.highlight{
+    height: 2rem;
     background: #3b5999;
     color:#fff;
+    font-weight: 1000;
 }
 
 .emptyRow{
@@ -50,7 +52,6 @@ tr{
 }
 
 .bonus{
-    height: 2rem;
 }
 
 .total{
@@ -60,7 +61,31 @@ tr{
 .point{
     font-size-adjust: 3;
     font-size:150%;
-    font-weight: bold;
+    font-weight: 800;
+}
+
+.curTurn, .rollChance{
+    font-size:200%;
+    font-weight: 700;
+}
+
+.p1{
+    width:6rem;
+}
+
+.p2{
+    width:6rem;
+}
+
+.categoryBtn{
+    width: 100%;
+    height: 100%;
+    text-align:left;
+    font-size:100%;
+    font-weight: 500;
+    background: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .playboard{
@@ -81,6 +106,7 @@ tr{
     color:#3b5999;
     font-size:300%;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .playBtn{
