@@ -33,11 +33,32 @@ body{
 
 table{
     background: #fff;
+    border-style: none;
     border-collapse: collapse;
+}
+
+td{
 }
 
 tr{
     height:2rem;
+}
+
+.info{
+    border-style: none;
+}
+
+.result{
+    text-align: center;
+    font-size:150%;
+    font-weight: 800;
+    border: none;
+}
+
+.status{
+    text-align: center;
+    font-size:150%;
+    font-weight: 800;
 }
 
 .highlight{
@@ -52,6 +73,7 @@ tr{
 }
 
 .bonus{
+    font-weight: 900;
 }
 
 .total{

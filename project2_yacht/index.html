@@ -16,9 +16,16 @@
     <div class="background">
         <div class="scoreboard">
             <table border="1">
-                <th>Categories</th>
-                <th class="p1">player1</th>
-                <th class="p2">player2</th>
+                <tr>
+                    <td rowspan="2" class="result"></td>
+                    <td rowspan="3" class="p1 status">player1</td>
+                    <td rowspan="3" class="p2 status">player2</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="highlight">Categories</td>
+                </tr>
                 <tr>
                     <td><button class="categoryBtn">Aces</button></td>
                     <td class="p1 aces point" align="center"></td>
@@ -51,16 +58,16 @@
                 </tr>
                 <tr class="highlight">
                     <td>Subtotal</td>
-                    <td class="p1 subtotal point" align="center"></td>
-                    <td class="p2 subtotal point" align="center"></td>
+                    <td class="p1" align="center"><span class="p1 subtotal">0</span>/63</td>
+                    <td class="p2" align="center"><span class="p2 subtotal">0</span>/63</td>
                 </tr>
                 <tr class="highlight bonus">
                     <td>+35 Bonus</td>
-                    <td class="p1 point" align="center"><span class="p1 bonus">0</span>/35</td>
-                    <td class="p2 point" align="center"><span class="p2 bonus">0</span>/35</td>
+                    <td class="p1 bonus point" align="center">0</td>
+                    <td class="p2 bonus point" align="center">0</td>
                 </tr>
                 <tr>
-                    <td colspan="3" align="center">Bounus if 1~6 are over 63 points</td>
+                    <td colspan="3" align="center" class="info">Bounus if 1~6 are over 63 points</td>
                 </tr>
                 <tr>
                     <td><button class="categoryBtn">Choice</button></td>
