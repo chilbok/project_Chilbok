@@ -124,11 +124,15 @@ tr{
 .dice{
     height: 5rem;
     width: 5rem;
-    background:#fff;
     color:#3b5999;
+    background:#fff;
     font-size:300%;
     font-weight: 900;
     cursor: pointer;
+}
+
+.selectedDice{
+    background:#000;
 }
 
 .playBtn{
