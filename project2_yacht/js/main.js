@@ -56,3 +56,4 @@ function clickDice(idx){
         console.log(selectedDice);
     }
 }
+
