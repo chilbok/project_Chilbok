@@ -1,8 +1,12 @@
 function calculatePoint(diceValue){
-    diceValue_ = diceValue;
+    diceValue_ = [];
+    for(let i=0;i<5;i++){
+        diceValue_.push(parseInt(diceValue[i]));
+    }
     diceValue_.sort((a,b)=>{
         return a-b;
     });
+    console.log(diceValue_)
     result = [];
     result.push(aces(diceValue_));
     result.push(deuces(diceValue_));
@@ -71,7 +75,7 @@ function sixes(diceValue){
 function choice(diceValue){
     let result = 0;
     for(let i=0;i<diceValue.length;i++){
-        result+=diceValue[i];
+        result= result+diceValue[i];
     }
     return result;
 }
@@ -94,19 +98,21 @@ function fullHouse(diceValue){
 }
 
 function sStraight(diceValue){
-    if(diceValue===[1,2,3,4,5]){
-        return 30;
-    }else{
-        return 0;
+    for(let i=0;i<diceValue.length;i++){
+        if(diceValue[i]!==i+1){
+            return 0;
+        }
     }
+    return 30;
 }
 
 function lStraight(diceValue){
-    if(diceValue===[2,3,4,5,6]){
-        return 30;
-    }else{
-        return 0;
+    for(let i=0;i<diceValue.length;i++){
+        if(diceValue[i]!==i+2){
+            return 0;
+        }
     }
+    return 30;
 }
 
 function yacht(diceValue){

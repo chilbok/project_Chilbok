@@ -91,6 +91,11 @@ tr{
     font-weight: 700;
 }
 
+.turnCnt{
+    font-size:150%;
+    font-weight: 600;
+}
+
 .p1{
     width:6rem;
 }
@@ -135,11 +140,25 @@ tr{
     background:#000;
 }
 
-.playBtn{
-    padding: 1rem;
+.rollBtn{
+    padding: 0.5rem;
     width:15rem;
     background: #3b5999;
     color:#fff;
+    font-size: 150%;
+    font-weight: 700;
+    border:none;
+    cursor:pointer;
+}
+
+.playBtn{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width:15rem;
+    background: #3b5999;
+    color:#fff;
+    font-size: 150%;
+    font-weight: 700;
     border:none;
     cursor:pointer;
 }
