@@ -1,28 +1,3 @@
-function calculatePoint(diceValue){
-    diceValue_ = [];
-    for(let i=0;i<5;i++){
-        diceValue_.push(parseInt(diceValue[i]));
-    }
-    diceValue_.sort((a,b)=>{
-        return a-b;
-    });
-    console.log(diceValue_)
-    result = [];
-    result.push(aces(diceValue_));
-    result.push(deuces(diceValue_));
-    result.push(threes(diceValue_));
-    result.push(fours(diceValue_));
-    result.push(fives(diceValue_));
-    result.push(sixes(diceValue_));
-    result.push(choice(diceValue_));
-    result.push(fourOfAKind(diceValue_));
-    result.push(fullHouse(diceValue_));
-    result.push(sStraight(diceValue_));
-    result.push(lStraight(diceValue_));
-    result.push(yacht(diceValue_));
-    return result;
-}
-
 function aces(diceValue){
     let result = 0;
     for(let i=0;i<diceValue.length;i++){

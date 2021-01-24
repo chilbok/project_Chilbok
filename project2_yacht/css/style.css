@@ -162,3 +162,7 @@ tr{
     border:none;
     cursor:pointer;
 }
+
+.checkedScore{
+    background: gray;
+}
